@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">T</string>
+    <string name="title_activity_main">Parents</string>
+
+    <string name="title_section1">主页</string>
+    <string name="title_section2">成绩</string>
+    <string name="title_section3">报告</string>
+    <string name="title_section4">约定</string>
+
+    <string name="days_completed">27天</string>
+    <string name="days_to_complete">30天</string>
+    <string name="successive">"连续 "</string>
+    <string name="suc_days">24</string>
+    <string name="days">" 天"</string>
+
+    <string name="settings">设置</string>
+
+    <string name="words_learned">267</string>
+    <string name="words">单词</string>
+    <string name="structures_learned">32</string>
+    <string name="structures">结构</string>
+    <string name="money_earned">1867</string>
+    <string name="money">金币</string>
+
+    <string name="message_review">小明今天主动复习了！</string>
+    <string name="message_correct">昨天说对了一句中考句子！</string>
+    <string name="message_earning">昨天挣了86个金币！</string>
+
+    <string name="good_news">报喜啦</string>
+    <string name="title_report">足迹</string>
+
+    <string name="single">新增</string>
+    <string name="total">总数</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example"> </string>
+
+    <string name="action_settings"> </string>
+
+    <integer name="login_status">0</integer>
+    <string name="title_activity_report">ReportActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.t.MainActivity$PlaceholderFragment"
+    android:id="@+id/mainPage">
+
+    <TextView
+        android:id="@+id/text_mainPage"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="@string/title_section1"
+        android:layout_gravity="center_horizontal|top"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0.05dp"
+        android:layout_below="@id/text_mainPage"
+        android:id="@+id/line">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@+id/line"
+        android:id="@+id/progress">
+
+    <TextView
+        android:id="@+id/daysCompleted"
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:text="@string/days_completed"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center_vertical|left"
+        />
+
+    <TextView
+        android:id="@+id/daysToComplete"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey"
+        android:text="@string/days_to_complete"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:layout_below="@+id/text_mainPage"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|right"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/successive_days"
+        android:layout_below="@id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/successive"
+            android:textSize="38sp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/successiveDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suc_days"
+            android:textSize="56sp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/days"
+            android:textSize="38sp"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/achievement"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/successive_days"
+        android:background="@drawable/lines"
+        >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/word"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/words_learned"
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                android:layout_below="@id/imageView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/words"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_below="@id/words"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/sentence"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/sentences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/structures_learned"
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                android:layout_below="@id/imageView2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/structures"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_below="@id/sentences"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/coin"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money_earned"
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                android:layout_below="@id/imageView3"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_below="@id/coins"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/achievement"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/achievement_list" />
+    </LinearLayout>
+
+
+</RelativeLayout>
